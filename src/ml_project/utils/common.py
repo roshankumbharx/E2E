@@ -1,13 +1,20 @@
 import os
 from box.exceptions import BoxValueError
 import yaml
-from mlProject import logger
+from ml_project import logger
 import json
 import joblib
-from ensure import ensure_annotations
+
 from box import ConfigBox
 from pathlib import Path
 from typing import Any
+
+
+import unittest
+# Add back the old unittest method name so ensure can find it:
+unittest.TestCase.assertRaisesRegexp = unittest.TestCase.assertRaisesRegex
+
+from ensure import ensure_annotations
 
 
 
