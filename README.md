@@ -35,3 +35,5 @@ python app.py
 ```bash
 Now open up your local host 0.0.0.0:8080
 ```
+
+390844752366.dkr.ecr.us-east-1.amazonaws.com/ml_project
